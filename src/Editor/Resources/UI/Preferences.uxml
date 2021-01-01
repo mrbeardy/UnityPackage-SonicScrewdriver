@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="main">
+        <Style src="Preferences.uss" />
+    
+        <ui:Label text="Sonic Screwdriver" name="Title" class="title" />
+        <ui:Toggle
+            class="autoCollapseInspectors"
+            name="autoCollapseInspectors" 
+            label="Auto-collapse inspectors" 
+            tooltip="Automatically collapses all inspectors in the inspector window."
+        />
+    </ui:VisualElement>
+</ui:UXML>

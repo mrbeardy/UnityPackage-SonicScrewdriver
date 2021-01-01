@@ -1,0 +1,16 @@
+.main {
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 32px;
+    -unity-font-style: bold;
+}
+
+Toggle.autoCollapseInspectors {
+    width: 200px;
+}
