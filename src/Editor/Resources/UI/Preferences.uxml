@@ -9,5 +9,11 @@
             label="Auto-collapse inspectors" 
             tooltip="Automatically collapses all inspectors in the inspector window."
         />
+
+        <ui:Toggle
+                class="debugMode"
+                name="debugMode"
+                label="Debug Mode"
+        />
     </ui:VisualElement>
 </ui:UXML>
