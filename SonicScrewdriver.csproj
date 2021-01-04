@@ -45,9 +45,14 @@
     <ItemGroup>
         <Compile Include="src\Editor\Sources\Constants.cs" />
         <Compile Include="src\Editor\Sources\Features\AutoCollapseInspectors.cs" />
+        <Compile Include="src\Editor\Sources\Features\Watch.cs" />
+        <Compile Include="src\Editor\Sources\Helpers.cs" />
+        <Compile Include="src\Editor\Sources\MonoBehaviours\WatchGroup.cs" />
+        <Compile Include="src\Editor\Sources\MonoBehaviours\WatchManager.cs" />
         <Compile Include="src\Editor\Sources\Preferences\SettingsUIRegister.cs" />
         <Compile Include="src\Editor\Sources\Preferences\Settings.cs" />
         <Compile Include="src\Editor\Sources\UIToolkitHelpers.cs" />
+        <Compile Include="src\Runtime\Attributes\WatchAttribute.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include=".gitignore" />

@@ -11,6 +11,6 @@
     -unity-font-style: bold;
 }
 
-Toggle.autoCollapseInspectors {
+Toggle {
     width: 200px;
 }
