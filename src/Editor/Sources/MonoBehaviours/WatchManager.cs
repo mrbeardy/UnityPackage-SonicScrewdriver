@@ -27,11 +27,22 @@ namespace Beardy.SonicScrewdriver.Editor.MonoBehaviours
                 IEnumerable<FieldInfo> attrFields = Helpers.GetFieldsWithAttribute<WatchAttribute>(monoBehaviour);
                 
                 if (!attrFields.Any()) continue;
+
+                var watchOptionsAttribute = (WatchOptionsAttribute) Attribute.GetCustomAttribute(
+                    monoBehaviour.GetType(), typeof(WatchOptionsAttribute)
+                );
+
+                var displayType = WatchOptionsAttribute.DisplayType.ScreenSpace;
+
+                if (watchOptionsAttribute != null)
+                {
+                    displayType = watchOptionsAttribute.displayType;
+                }
                 
                 WatchGroup watchGroup = Helpers.InstantiatePrefab<WatchGroup>("WatchGroup");
                 watchGroup.transform.SetParent(GroupContainer, false);
                 
-                watchGroup.Init(monoBehaviour, attrFields);
+                watchGroup.Init(monoBehaviour, attrFields, displayType: displayType);
             } 
         }
     }
