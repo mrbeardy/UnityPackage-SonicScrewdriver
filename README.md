@@ -6,7 +6,7 @@ Sonic Screwdriver is a utility and productivity package for Unity that aims to m
 
 - **Auto-collapse inspectors**  
   Automatically collapses all inspectors in the inspector window. 
-- **Watch**. 
+- **Watch**  
   Displays a debug canvas on screen for fields marked with the `[Watch]` Attribute. Supports both screen-space and world-space:
 
 ## Watch Feature
